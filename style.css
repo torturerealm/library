@@ -24,11 +24,16 @@ header {
     background-color: var(--c-blue-1);
     padding: var(--padding);
     display: flex;
+    align-items: center;
 }
 
 footer {
     height: 5vh;
+    text-align: center;
     background-color: var(--c-blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-placeholder {
