@@ -8,6 +8,7 @@
 
 body {
     color: var(--c-blue-2);
+    margin: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -32,8 +33,12 @@ footer {
 }
 
 .main-section {
-    height: 80vh;
+    height: 85vh;
     display: flex;
 }
 
+.dashboard {
+    width: fit-content;
+    background-color: var(--c-gray-2);
+}
 
