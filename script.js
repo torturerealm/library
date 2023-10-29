@@ -62,13 +62,17 @@ function resetDisplay() {
     });
 }
 
-const book1 = new Book("Hello", "Hi", 23, true);
-const book2 = new Book("Thunderclap", "PE Dekebna", 344, false);
+// Sample Books
+const book1 = new Book("One Piece", "Eiichiro Oda", 21450, true);
+const book2 = new Book("Harry Potter and the Sorcerer's Stone", "J.K Rowling", 320, true);
+const book3 = new Book("The Lightning Thief", "Rick Riordan", 377, true);
+const book4 = new Book("The Ghost Bird Series: Introductions", "C. L. Stone", 206, true);
 myLibrary.push(book1);
 myLibrary.push(book2);
-myLibrary.push(book1);
-myLibrary.push(book2);
+myLibrary.push(book3);
+myLibrary.push(book4);
 displayEachBook();
+
 
 const submit = document.querySelector("form");
 submit.addEventListener("submit", (event) => {
