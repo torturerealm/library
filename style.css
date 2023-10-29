@@ -1,0 +1,20 @@
+:root {
+    --c-blue-1: #b2cfff;
+    --c-blue-2: #151935;
+    --c-gray-1: #77767c;
+    --c-gray-2: #e2e2e2;
+    --c-white: #fff3ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    height: 10vh;
+}
+
+.main-section {
+    
+}
