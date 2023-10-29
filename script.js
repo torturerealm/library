@@ -46,10 +46,12 @@ function displayEachBook() {
         card.appendChild(status);
 
         const statusButton = document.createElement("button");
+        statusButton.classList.add("status-btn");
         statusButton.textContent = "Read";
         card.appendChild(statusButton);
 
         const removeButton = document.createElement("button");
+        removeButton.classList.add("remove-btn");
         removeButton.textContent = "Remove Book";
         card.appendChild(removeButton);
     });

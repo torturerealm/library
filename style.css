@@ -4,6 +4,8 @@
     --c-gray-1: #77767c;
     --c-gray-2: #e2e2e2;
     --c-white: #fff3ff;
+
+    --padding: 16px;
 }
 
 * {
@@ -20,6 +22,7 @@ body {
 header {
     height: 10vh;
     background-color: var(--c-blue-1);
+    padding: var(--padding);
     display: flex;
 }
 
@@ -38,6 +41,7 @@ footer {
 
 .main-section {
     height: 85vh;
+    background-color: var(--c-white);
     display: flex;
 }
 
@@ -47,7 +51,7 @@ footer {
 }
 
 .book-display {
-    padding: 16px;
+    padding: var(--padding);
     flex: 1;
     display: grid;
     grid-template: 200px 200px 200px / 200px 200px;
@@ -60,18 +64,29 @@ footer {
     height: 200px;
     width: 200px;
     background-color: var(--c-blue-1);
-    border-radius: 30px;
-    padding: 16px;
+    border-radius: var(--padding);
+    padding: var(--padding);
+    position: relative;
     overflow: hidden;
 }
 
 .title {
     font-weight: bolder;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: var(--padding);
 }
 
-.card>button {
-
+.card>.status-btn {
+    position: absolute;
+    left: var(--padding);
+    bottom: var(--padding);
 }
+
+.card>.remove-btn {
+    position: absolute;
+    right: var(--padding);
+    bottom: var(--padding);
+}
+
+
 
