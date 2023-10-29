@@ -38,6 +38,14 @@ function displayEachBook() {
         const status = document.createElement("div");
         status.textContent = `Read: ${item.status()}`;
         card.appendChild(status);
+
+        const statusButton = document.createElement("button");
+        statusButton.textContent = "Read";
+        card.appendChild(statusButton);
+
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Remove Book";
+        card.appendChild(removeButton);
     });
 }
 
