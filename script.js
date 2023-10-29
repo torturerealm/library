@@ -11,7 +11,13 @@ function Book(title, author, page, status) {
 }
 
 function addBookToLibrary() {
-    // push new object inside array
+    const title = document.getElementById("book-title").value;
+    const author = document.getElementById("book-author").value;
+    const page = document.getElementById("book-pages").value;
+    const status = document.getElementById("reading-status").checked;
+    
+    const newBook = new Book(title, author, page, status);
+    myLibrary.push(newBook);
 }
 
 function displayEachBook() {
@@ -60,13 +66,7 @@ displayEachBook();
 const submit = document.querySelector("form");
 submit.addEventListener("submit", (event) => {
     event.preventDefault();
-    const title = document.getElementById("book-title").value;
-    const author = document.getElementById("book-author").value;
-    const page = document.getElementById("book-pages").value;
-    const status = document.getElementById("reading-status").checked;
-
-    const newBook = new Book(title, author, page, status);
-    myLibrary.push(newBook);
+    addBookToLibrary();
     displayEachBook();
 });
 
