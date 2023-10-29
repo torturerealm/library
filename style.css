@@ -53,6 +53,7 @@ footer {
     grid-template: 200px 200px 200px / 200px 200px;
     row-gap: 16px;
     column-gap: 16px;
+    overflow: scroll;
 }
 
 .card {
