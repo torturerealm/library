@@ -15,15 +15,29 @@ function addBookToLibrary() {
 }
 
 function displayEachBook() {
-    // loop through array
-    // display each book
     myLibrary.forEach(item => {
         const display = document.querySelector(".book-display");
         
         const card = document.createElement("div");
         card.classList.add("card");
-        card.textContent = `${item.title} by ${item.author}, ${item.page}, Read: ${item.status}`;
         display.appendChild(card);
+        
+        const title = document.createElement("div");
+        title.classList.add("title");
+        title.textContent = `${item.title}`;
+        card.appendChild(title);
+
+        const author = document.createElement("div");
+        author.textContent = `Author: ${item.author}`;
+        card.appendChild(author);
+        
+        const page = document.createElement("div");
+        page.textContent = `Pages: ${item.page}`;
+        card.appendChild(page);
+
+        const status = document.createElement("div");
+        status.textContent = `Read: ${item.status()}`;
+        card.appendChild(status);
     });
 }
 
