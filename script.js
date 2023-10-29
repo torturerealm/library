@@ -36,7 +36,7 @@ function displayEachBook() {
         card.appendChild(page);
 
         const status = document.createElement("div");
-        status.textContent = `Read: ${item.status()}`;
+        status.textContent = `Status: ${item.status()}`;
         card.appendChild(status);
 
         const statusButton = document.createElement("button");
@@ -56,5 +56,18 @@ myLibrary.push(book2);
 myLibrary.push(book1);
 myLibrary.push(book2);
 displayEachBook();
+
+const submit = document.querySelector("form");
+submit.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const title = document.getElementById("book-title").value;
+    const author = document.getElementById("book-author").value;
+    const page = document.getElementById("book-pages").value;
+    const status = document.getElementById("reading-status").checked;
+
+    const newBook = new Book(title, author, page, status);
+    myLibrary.push(newBook);
+    displayEachBook();
+});
 
 
