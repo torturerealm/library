@@ -6,6 +6,10 @@
     --c-white: #fff3ff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--c-blue-2);
     margin: 0px;
@@ -43,13 +47,17 @@ footer {
 }
 
 .book-display {
+    padding: 16px;
     flex: 1;
     display: grid;
+    grid-template: 200px 200px 200px / 200px 200px;
+    row-gap: 16px;
+    column-gap: 16px;
 }
 
 .card {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-color: var(--c-blue-1);
     overflow: hidden;
 }
