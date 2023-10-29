@@ -55,6 +55,13 @@ function displayEachBook() {
     });
 }
 
+function resetDisplay() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+        card.remove();
+    });
+}
+
 const book1 = new Book("Hello", "Hi", 23, true);
 const book2 = new Book("Thunderclap", "PE Dekebna", 344, false);
 myLibrary.push(book1);
@@ -67,6 +74,7 @@ const submit = document.querySelector("form");
 submit.addEventListener("submit", (event) => {
     event.preventDefault();
     addBookToLibrary();
+    resetDisplay();
     displayEachBook();
 });
 
