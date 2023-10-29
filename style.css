@@ -61,5 +61,6 @@ footer {
     width: 200px;
     background-color: var(--c-blue-1);
     border-radius: 30px;
+    padding: 16px;
     overflow: hidden;
 }
