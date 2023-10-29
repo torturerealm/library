@@ -41,3 +41,15 @@ footer {
     width: fit-content;
     background-color: var(--c-gray-2);
 }
+
+.book-display {
+    flex: 1;
+    display: grid;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    background-color: var(--c-blue-1);
+    overflow: hidden;
+}
