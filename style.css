@@ -12,13 +12,28 @@ body {
     flex-direction: column;
 }
 
-header, footer {
+header {
     height: 10vh;
     background-color: var(--c-blue-1);
+    display: flex;
+}
+
+footer {
+    height: 5vh;
+    background-color: var(--c-blue-1);
+}
+
+.icon-placeholder {
+    height: 100%;
+    width: 10%;
+    background-color: var(--c-blue-2);
+    text-align: center;
+    color: var(--c-white);
 }
 
 .main-section {
     height: 80vh;
     display: flex;
 }
+
 
