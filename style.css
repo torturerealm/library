@@ -54,14 +54,15 @@ footer {
     padding: var(--padding);
     flex: 1;
     display: grid;
-    grid-template: 200px 200px 200px / 200px 200px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    justify-items: center;
     row-gap: 16px;
     column-gap: 16px;
     overflow: scroll;
 }
 
 .card {
-    height: 200px;
+    height: 300px;
     width: 200px;
     background-color: var(--c-blue-1);
     border-radius: var(--padding);
