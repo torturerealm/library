@@ -46,7 +46,29 @@ footer {
 
 .dashboard {
     width: fit-content;
+    background-color: var(--c-gray-1);
+    padding: var(--s-16px);
+}
+
+legend {
+    font-size: large;
+    color: var(--c-white);
+}
+
+label {
+    width: 60px;
+    display: inline-block;
+}
+
+fieldset>button {
+    font: inherit;
     background-color: var(--c-gray-2);
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+fieldset>button:hover {
+    background-color: var(--c-blue-1);
 }
 
 .book-display {
