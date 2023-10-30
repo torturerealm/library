@@ -5,7 +5,7 @@
     --c-gray-2: #e2e2e2;
     --c-white: #fff3ff;
 
-    --padding: 16px;
+    --s-16px: 16px;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 header {
     height: 10vh;
     background-color: var(--c-blue-1);
-    padding: var(--padding);
+    padding: var(--s-16px);
     display: flex;
     align-items: center;
 }
@@ -56,10 +56,10 @@ footer {
 }
 
 .book-display {
-    padding: var(--padding);
+    padding: var(--s-16px);
     flex: 1;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     justify-items: center;
     row-gap: 16px;
     column-gap: 16px;
@@ -71,8 +71,8 @@ footer {
     width: 300px;
     background-color: var(--c-white);
     border-left: 16px solid var(--c-blue-1);
-    border-radius: var(--padding);
-    padding: var(--padding);
+    border-radius: var(--s-16px);
+    padding: var(--s-16px);
     position: relative;
     overflow: hidden;
 }
@@ -80,19 +80,19 @@ footer {
 .title {
     font-weight: bolder;
     text-align: center;
-    margin-bottom: var(--padding);
+    margin-bottom: var(--s-16px);
 }
 
 .card>.status-btn {
     position: absolute;
-    left: var(--padding);
-    bottom: var(--padding);
+    left: var(--s-16px);
+    bottom: var(--s-16px);
 }
 
 .card>.remove-btn {
     position: absolute;
-    right: var(--padding);
-    bottom: var(--padding);
+    right: var(--s-16px);
+    bottom: var(--s-16px);
 }
 
 
