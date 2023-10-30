@@ -79,6 +79,16 @@ footer {
     margin-bottom: var(--s-16px);
 }
 
+.card>button {
+    font: inherit;
+    background-color: var(--c-blue-1);
+    border-radius: 8px;
+}
+
+.card>button:hover {
+    background-color: var(--c-gray-1);
+}
+
 .card>.status-btn {
     position: absolute;
     left: var(--s-16px);
