@@ -25,6 +25,7 @@ header {
     background-color: var(--c-blue-1);
     padding: var(--s-16px);
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -73,7 +74,7 @@ footer {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     margin-bottom: var(--s-16px);
 }
