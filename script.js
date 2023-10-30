@@ -73,10 +73,6 @@ myLibrary.push(book1);
 myLibrary.push(book2);
 myLibrary.push(book3);
 myLibrary.push(book4);
-myLibrary.push(book1);
-myLibrary.push(book2);
-myLibrary.push(book3);
-myLibrary.push(book4);
 displayEachBook();
 
 
@@ -88,4 +84,15 @@ submit.addEventListener("submit", (event) => {
     displayEachBook();
 });
 
-
+// let removeButton = document.querySelectorAll(".remove-btn");
+// removeButton.forEach((button) => button.addEventListener("click", () => {
+//     console.log(button);
+//     let title = button.parentElement.querySelector(".title").textContent;
+//     let index = myLibrary.findIndex((item => {
+//          if (item.title === title) return true;
+//     }));
+//     myLibrary.splice(index, 1);
+//     console.table(myLibrary);
+//     resetDisplay();
+//     displayEachBook();
+// }));
