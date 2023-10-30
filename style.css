@@ -36,14 +36,6 @@ footer {
     align-items: center;
 }
 
-.icon-placeholder {
-    height: 100%;
-    width: 10%;
-    background-color: var(--c-blue-2);
-    text-align: center;
-    color: var(--c-white);
-}
-
 .main-section {
     height: 85vh;
     background-color: var(--c-white);
@@ -56,13 +48,13 @@ footer {
 }
 
 .book-display {
-    padding: var(--s-16px);
     flex: 1;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     justify-items: center;
     row-gap: 16px;
     column-gap: 16px;
+    padding: var(--s-16px);
     overflow: scroll;
 }
 
