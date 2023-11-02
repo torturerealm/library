@@ -51,12 +51,14 @@ footer {
 }
 
 legend {
+    font-weight: bold;
     font-size: large;
     color: var(--c-white);
 }
 
 label {
     width: 60px;
+    color: var(--c-white);
     display: inline-block;
 }
 
@@ -85,7 +87,7 @@ fieldset>button:hover {
 
 .card {
     height: 300px;
-    width: 300px;
+    width: 250px;
     background-color: var(--c-white);
     border-radius: var(--s-16px);
     border-left: 16px solid var(--c-blue-1);
