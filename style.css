@@ -45,7 +45,7 @@ footer {
 }
 
 .dashboard {
-    width: fit-content;
+    width: 250px;
     background-color: var(--c-gray-1);
     padding: var(--s-16px);
 }
