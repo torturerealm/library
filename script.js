@@ -64,6 +64,16 @@ function resetDisplay() {
     });
 }
 
+function openDashboard() {
+    document.querySelector(".dashboard").style.width = "250px";
+    document.querySelector(".dashboard").style.padding = "16px";
+}
+    
+function closeDashboard() {
+    document.querySelector(".dashboard").style.width = "0px";
+    document.querySelector(".dashboard").style.padding = "0px";
+}
+
 // Sample Books
 const book1 = new Book("One Piece", "Eiichiro Oda", 21450, true);
 const book2 = new Book("Harry Potter and the Sorcerer's Stone", "J.K Rowling", 320, true);
@@ -83,6 +93,19 @@ submit.addEventListener("submit", (event) => {
     resetDisplay();
     displayEachBook();
 });
+
+const dashboard = document.querySelector("#dashboard-button");
+dashboard.addEventListener("click", () => {
+    if (dashboard.className === "expand") {
+        openDashboard();
+        dashboard.classList.remove("expand");
+        dashboard.classList.add("minimize");
+    } else {
+        closeDashboard();
+        dashboard.classList.add("expand");
+        dashboard.classList.remove("minimize");
+    }
+})
 
 // let removeButton = document.querySelectorAll(".remove-btn");
 // removeButton.forEach((button) => button.addEventListener("click", () => {
